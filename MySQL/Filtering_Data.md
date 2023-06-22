@@ -1,7 +1,8 @@
 ## Lab Instructions
+
 **Lucky Shrub** is a medium-sized garden design firm that sells indoor and outdoor plants, making them a one stop shop for clients. In this lab, you are going to complete the following tasks to make it easier for Lucky Shrub staff to print relevant order data on the screen.
 
-The `Orders` table contains information about the 
+The `Orders` table contains information about the following columns
 * Order ID, Client ID, Product ID, Quantity and Cost as shown below.
 
 ![Filtering Lab Table](images/filter_lab_1.png)
