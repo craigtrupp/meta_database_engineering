@@ -40,6 +40,8 @@ CREATE TABLE Staff (StaffID INT, FullName VARCHAR(100), PhoneNumber VARCHAR(10))
 | FullName    | varchar(100) | YES  |     | NULL    |       |
 | PhoneNumber | varchar(10)  | YES  |     | NULL    |       |
 
+<br>
+
 **2.** Write a SQL statement to apply the following constraints to the Staff table.
 * StaffID: INT NOT NULL and PRIMARY KEY
 * FullName: VARCHAR(100) and NOT NULL
@@ -53,6 +55,8 @@ ALTER TABLE Staff MODIFY StaffID INT PRIMARY KEY, MODIFY FullName VARCHAR(100) N
 | FullName    | varchar(100) | NO   |     | NULL    |       |
 | PhoneNumber | int          | NO   |     | NULL    |       |
 
+<br>
+
 **3.** Write a SQL statement that adds a new column called 'Role' to the Staff table with the following constraints
 * Role: VARCHAR(50) and NOT NULL
 ```sql
@@ -64,6 +68,8 @@ ALTER TABLE Staff ADD Role VARCHAR(50) NOT NULL;
 | FullName    | varchar(100) | NO   |     | NULL    |       |
 | PhoneNumber | int          | NO   |     | NULL    |       |
 | Role        | varchar(50)  | NO   |     | NULL    |       |
+
+<br>
 
 **4.** Write a SQL statement that drops the Phone Number column from the 'Staff' table.
 ```sql
@@ -150,5 +156,8 @@ ALTER TABLE FoodOrders DROP COLUMN OrderDate;
 ```sql
 ALTER TABLE OrderStatus CHANGE Order_status DeliveryStatus VARCHAR(15);
 ```
-
+**6.** Rename a table using the RENAME command with ALTER
+```sql
+ALTER TABLE OrderStatus RENAME OrderDeliveryStatus;
+```
 
