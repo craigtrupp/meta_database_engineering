@@ -317,3 +317,48 @@ FROM mg_orders;
 |       4 | NULL                |
 |       5 | NULL                |
 |       6 | Delivered           |
+
+
+---
+
+<br>
+
+#### **Functions / Unit Quiz Notes**
+* Select the function name that changes the first-string value of column A with the second string value in the following SQL statement
+```sql
+-- Create Temp Table to work with
+CREATE TEMPORARY TABLE IF NOT EXISTS SelectOrders AS (SELECT * FROM Orders LIMIT 5);
+-- Query OK, 5 rows affected
+SELECT * FROM SelectOrders;
+```
+| OrderID | ClientID | ProductID | Quantity | Cost   |
+|---------|---------|-----------|----------|---------|
+|       1 | Cl1      | P1        |       10 | 500.00 |
+|       2 | Cl2      | P2        |        5 | 100.00 |
+|       3 | Cl3      | P3        |       20 | 800.00 |
+|       4 | Cl4      | P4        |       15 | 150.00 |
+|       5 | Cl3      | P3        |       10 | 450.00 |
+
+```sql
+-- REPLACE Takes a Column, A Serach value, and replace value
+SELECT REPLACE(ClientId, 'Cl', 'DRZ') FROM SelectOrders;
+```
+| REPLACE(ClientId, 'Cl', 'DRZ') |
+|--------------------------------|
+| DRZ1                           |
+| DRZ2                           |
+| DRZ3                           |
+| DRZ4                           |
+| DRZ3                           |
+
+```sql
+-- Replace does not alter the table however
+SELECT * FROM SelectOrders;
+```
+| OrderID | ClientID | ProductID | Quantity | Cost   |
+|---------|---------|-----------|----------|---------|
+|       1 | Cl1      | P1        |       10 | 500.00 |
+|       2 | Cl2      | P2        |        5 | 100.00 |
+|       3 | Cl3      | P3        |       20 | 800.00 |
+|       4 | Cl4      | P4        |       15 | 150.00 |
+|       5 | Cl3      | P3        |       10 | 450.00 |
