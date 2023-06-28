@@ -80,7 +80,7 @@ ALTER TABLE Orders MODIFY COLUMN Cost DECIMAL(6,2) NOT NULL;
 * The expected output for OrderID = 5 is 450
 ```sql
 -- Set Function with name and argument_name, type
-CREATE FUNCTION FindCost_Again(order_id INT) 
+CREATE FUNCTION FindCost(order_id INT) 
 -- Detail Return type and keyword for consistent return (just seems like syntax thing )
 RETURNS DECIMAL (6,2) DETERMINISTIC 
 -- Value returns the single value from the SELECT statement alone (requires parentheses)
