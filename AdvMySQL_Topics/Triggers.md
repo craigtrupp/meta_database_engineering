@@ -144,4 +144,36 @@ SELECT * FROM Notifications;
 
 <br>
 
+**3.** Create a `DELETE` trigger called `NotifyProductDelete`. 
+* This trigger must insert a notification in the Notifications table for the sales department after a product has been deleted from the Products table.
+* The notification message should be in the following format: 
+    * `The product with a ProductID + {ProductID} + was deleted`
+```sql
+DELIMITER //
+CREATE TRIGGER IF NOT EXISTS NotifyProductDelete
+    AFTER DELETE
+    ON Products FOR EACH ROW
+    INSERT INTO Notifications (Notification, DateTime)
+    VALUES (CONCAT('The product with a Product ID : ', OLD.ProductID, ' was deleted'),
+    CURRENT_TIME());
+//
+-- Easier to just change the DELIMITER BACK in a separte statement to the mysql interface
+DELIMITER ;
+```
+* Query OK, 0 rows affected
 
+```sql
+-- DELETE ONE Row
+DELETE FROM Products WHERE ProductID = 'P7';
+
+-- Now check to see if the trigger ran
+SELECT * FROM Notifications;
+```
+| NotificationID|Notification|DateTime|
+|----|-----|-----|
+|1|A SellPrice less than the BuyPrice was inserted for ProductID P7 | 2023-06-28 17:42:30 |
+|2|P6 was updated with a SellPrice of : 60.00 which is the same or less than the BuyPrice : 64.50| 2023-06-28 18:03:33 |
+|3|The product with a Product ID : P7 was deleted| 2023-06-29 15:37:08|
+
+* It added as expected
+* Just run the DELIMITER command after running the invidiual queries
