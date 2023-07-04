@@ -4,8 +4,8 @@ The Lucky Shrub database contains a lot of data about their business. The data i
 * Clients, Orders, Products,  Addresses, Employees, Audit, Notifications and Activity as shown in the following ER-Diagram
 
 `ERD`
-![ERD 1](images/DAnalysis_4_Erd_1.png)
-![ERD 2](images/DAnalysis_4_Erd_2.png)
+![ERD 1](../images/DAnalysis_4_Erd_1.png)
+![ERD 2](../images/DAnalysis_4_Erd_2.png)
 
 <br>
 
@@ -343,11 +343,20 @@ AS ProductID, Clients.FullName, Clients.ContactNumber
 FROM Clients RIGHT JOIN Activity 
 ON Clients.ClientID = Activity.Properties ->>'$.ClientID';
 ```
+* First Table Output
 | ClientID | ProductID | FullName    | ContactNumber |
 |----------|-----------|-------------|---------------|
 | "Cl1"    | P1        | Takashi Ito |     351786345 |
 | "Cl2"    | P4        | Jane Murphy |     351567243 |
 | "Cl5"    | P5        | Altay Ayhan |     351208983 |
+
+* Second Table Output Notice how the ClientID differs with the quotation from above based on the double arrow `-->`
+| ClientID | ProductID | FullName    | ContactNumber |
+|----------|-----------|-------------|---------------|
+| Cl1      | P1        | Takashi Ito |     351786345 |
+| Cl2      | P4        | Jane Murphy |     351567243 |
+| Cl5      | P5        | Altay Ayhan |     351208983 |
+
 
 #### `Property Access Detail`
 You can see the double quote on the ClientID value based on the access type, really important on **JOINS** that if you are matching you want to use the second (without double quotes) for values to match!
@@ -471,7 +480,7 @@ INNER JOIN Products AS prdcts
 WHERE YEAR(ords.Date) = 2022
 ORDER BY ords.Cost DESC;
 
--- No a Basic Select
+-- Now a Basic Select
 SELECT * FROM DataSummary;
 ```
 | FullName        | ContactNumber | County            | ProductName            | ProductID | Cost    | Date       |
