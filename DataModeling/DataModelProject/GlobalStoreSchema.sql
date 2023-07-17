@@ -144,6 +144,41 @@ CREATE TABLE IF NOT EXISTS `GlobalSuperStore`.`Shipments` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `GlobalSuperStore`.`Sales`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `GlobalSuperStore`.`Sales` (
+  `SaleID` INT NOT NULL,
+  `TotalSalePrice` DECIMAL(7,2) NOT NULL,
+  `TotalProductPrice` DECIMAL(7,2) NOT NULL,
+  `ShipmentCost` DECIMAL(5,2) NULL,
+  `Quantity` INT NOT NULL,
+  `OrderID` INT NOT NULL,
+  `CustomerAddressShipmentID` INT NOT NULL,
+  `ProductID` INT NOT NULL,
+  `SaleProfit` DECIMAL(5,2) NULL,
+  PRIMARY KEY (`SaleID`),
+  INDEX `sl_productID_idx` (`ProductID` ASC) VISIBLE,
+  INDEX `sl_orderID_idx` (`OrderID` ASC) VISIBLE,
+  INDEX `sl_customerAddressID_idx` (`CustomerAddressShipmentID` ASC) VISIBLE,
+  CONSTRAINT `sl_productID`
+    FOREIGN KEY (`ProductID`)
+    REFERENCES `GlobalSuperStore`.`Products` (`ProductID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `sl_orderID`
+    FOREIGN KEY (`OrderID`)
+    REFERENCES `GlobalSuperStore`.`Orders` (`OrderID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `sl_customerAddressID`
+    FOREIGN KEY (`CustomerAddressShipmentID`)
+    REFERENCES `GlobalSuperStore`.`CustomerAddress` (`CustomerAddressID`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
