@@ -157,6 +157,10 @@ This repository serves as a reference for all educational material learned throu
     * [Global Super Store DB ERD](/DataModeling/DataModelProject/GlobalSuperStoreSchemaERD.png)
     * [Global Store Schema SQL](/DataModeling/DataModelProject/GlobalStoreSchema.sql)
     * [Star Sales Schema](/DataModeling/DataModelProject/Star_Schema_Sales.png)
-    * [Star Sales Schema SQL](/DataModeling/DataModelProject/Star_Schema_Sales.png)
+    * [Star Sales Schema SQL](/DataModeling/DataModelProject/star_schema.sql)
 
 ---
+
+## **Certificate** 🧾
+![Meta Certificate](images/Meta_DBEngineeringCert_1.png)
+* [Verification Link](https://coursera.org/verify/professional-cert/JVKWU2TG5H9)
