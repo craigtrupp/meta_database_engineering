@@ -172,4 +172,4 @@ This browser does not support PDFs. Please download the PDF to view it: Download
 -->
 ![Foodie Fi Intro](images/Certificate_Mdb.png)
 * [PDF File](/images/Meta_DB_Engineering_1.pdf)
-* [Verification Link](https://coursera.org/verify/professional-cert/JVKWU2TG5H9)
+* [Verification Link](https://coursera.org/verify/professional-cert/JVKWU2TMG5H9)
