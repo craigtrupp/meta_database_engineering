@@ -1,8 +1,6 @@
 # Database Engineering 🗄️
 This repository serves as a reference for all educational material learned throughout the [Meta Professional Database Engineer Certificate](https://www.coursera.org/professional-certificates/meta-database-engineer). The program paves the way to learning the skills and roles performed by Data/Database Engineers with a primay focus on the following subjects
 
-<br>
-
 ## **Courses & Areas of Focus 🔦**
 1. `Introduction to Databases`
     - Concepts and principles that underpin how databases work
@@ -77,8 +75,6 @@ This repository serves as a reference for all educational material learned throu
 
 ---
 
-<br>
-
 ## **Repository Reference Materials** 📚
 * Repository Items from referenced sections above
 
@@ -133,4 +129,7 @@ This repository serves as a reference for all educational material learned throu
         - [Assessment Details](/PythonProgramming/Import_Scope_Wk4/Assessment_I_S/README.md)
         - [Script](/PythonProgramming/Import_Scope_Wk4/Assessment_I_S/jsongenerator.py)
 
+### **Database Clients** 🌉
+* **Connection Cursors**
+    * [Establishing Connection](/Database%20Clients/Making%20your%20MySQL_Python%20connection.ipynb)
 
