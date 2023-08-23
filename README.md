@@ -134,4 +134,29 @@ This repository serves as a reference for all educational material learned throu
     * [Establishing Connection](/Database%20Clients/Wk1_Connction_Cursors/Making%20your%20MySQL_Python%20connection.ipynb)
     * [Create Cursor & Access MySQL Database](/Database%20Clients/Wk1_Connction_Cursors/Working%20with%20cursors.ipynb)
     * [Simple Python App & SQL Management](/Database%20Clients/Wk1_Connction_Cursors/Creating%20a%20table%20structure%20in%20a%20MySQL%20database%20using%20Python.ipynb)
+* **Performing Queries**
+    * [Create & Read Records](/Database%20Clients/Wk2_PerformingQueries/Creating%20and%20reading%20records%20in%20a%20MySQL%20database%20using%20Python.ipynb)
+    * [Filtering & Sorting](/Database%20Clients/Wk2_PerformingQueries/Filtering%20and%20sorting%20data%20in%20a%20MySQL%20database%20using%20Python.ipynb)
+    * [Joining](/Database%20Clients/Wk2_PerformingQueries/Performing%20different%20JOIN%20operations%20in%20MySQL%20databases%20using%20Python.ipynb)
+    * [Updating & Deleting](/Database%20Clients/Wk2_PerformingQueries/Updating%20and%20deleting%20records%20in%20a%20MySQL%20database%20using%20Python.ipynb)
+* **Accessing Procedures, Functions (date & time), Connection Pools**
+    * [Access Stored Procedure](/Database%20Clients/Wk3_AdvDBClients/Accessing%20stored%20procedures%20in%20a%20MySQL%20database%20using%20Python.ipynb)
+    * [MySQL Functions](/Database%20Clients/Wk3_AdvDBClients/Utilizing%20MySQL%20functions%20with%20Python.ipynb)
+    * [Date & Time](/Database%20Clients/Wk3_AdvDBClients/Working%20with%20date%20and%20time%20functions%20in%20Python.ipynb)
+    * [Connection Pools](/Database%20Clients/Wk3_AdvDBClients/Working%20with%20connection%20pools.ipynb)
+    * [Section Overview/Brief Project](/Database%20Clients/Wk3_AdvDBClients/Little%20Lemon%20analysis%20and%20sales%20report.ipynb)
+* **Final Section Projects**
+    * [Set DB Environment](/Database%20Clients/Wk4_FinalProjects/Setting%20DB%20Environment.ipynb)
+    * [Procedure Creation & Execution](/Database%20Clients/Wk4_FinalProjects/Implement%20and%20query%20stored%20procedures.ipynb)
+    * [Analysis & Sales Report](/Database%20Clients/Wk4_FinalProjects/Little%20Lemon%20analysis%20and%20sales%20report.ipynb)
 
+### **Data Modeling** 📸
+* [Workbench SQL Generated File](/DataModeling/Wk1_WBench/mysqlwb_model.sql)
+* [Table Insertion & View Generation](/DataModeling/Wk1_WBench/insert_n_view.sql)
+* **Section Project Materials**
+    * [Global Super Store DB ERD](/DataModeling/DataModelProject/GlobalSuperStoreSchemaERD.png)
+    * [Global Store Schema SQL](/DataModeling/DataModelProject/GlobalStoreSchema.sql)
+    * [Star Sales Schema](/DataModeling/DataModelProject/Star_Schema_Sales.png)
+    * [Star Sales Schema SQL](/DataModeling/DataModelProject/Star_Schema_Sales.png)
+
+---
