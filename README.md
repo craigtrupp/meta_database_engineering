@@ -98,12 +98,12 @@ This repository serves as a reference for all educational material learned throu
 
 ### **Advanced MySQL Topics** 🎯
 * User Defined Function & Stored Procedures - [UDF & Procedure](/AdvMySQL_Topics/Dev_Funcs.md)
-* Prepared Statement, CTE, JSON Column Accessing - [Prep, CTE, & JSON](/AdvMySQL_Topics/Optimization_Technique.md)
+* Prepared Statement, CTE, JSON Column Accessing - [Prep, CTE, & JSON](/AdvMySQL_Topics/Optimization_Techniques.md)
 * Select & Query Optimization - [Optimization & Indexing](/AdvMySQL_Topics/Select_Optimization.md)
 * Triggers & Events w/DELIMITER Syntax - [Triggers & Events](/AdvMySQL_Topics/Triggers.md)
 * Data Analysis & Mocked Business Request - [Data Analysis](/AdvMySQL_Topics/Data_Analysis_MySQL.md)
 * Client Persona Scenario / SQL Technique Combinations 
-    - Scenario / Client Persona - [Scenario & Client Persona](/AdvMySQL_Topics/Closing_Course_Task/Danalysis_Client_Persona.md)
+    - Scenario / Client Persona - [Scenario & Client Persona](/AdvMySQL_Topics/Closing_Course_Task/DAnalysis_Client_Persona.md)
     - SQL Queries - [Business Queries](/AdvMySQL_Topics/Closing_Course_Task/Client_Persona_Queries.sql)
         - User Defined Functions
         * Procedures
@@ -118,7 +118,7 @@ This repository serves as a reference for all educational material learned throu
 * **Procedural, Functional, OOP**
     - Object Refresher : 
         - [SimpleObject](/PythonProgramming/Procedural_Functional_OOP_Wk3/CustomObj.py)
-        - [Inheritance](/PythonProgramming/Procedural_Functional_OOP_Wk3.More_Obj_passing.py)
+        - [Inheritance](/PythonProgramming/Procedural_Functional_OOP_Wk3/More_Obj_passing.py)
     - Recursion Ex : [Recursion_Ex](/PythonProgramming/Procedural_Functional_OOP_Wk3/Reverse_Recurse.py)
     - Scoping : [Scoping](/PythonProgramming/Procedural_Functional_OOP_Wk3/Scoping.py)
     - Assessments
