@@ -162,5 +162,10 @@ This repository serves as a reference for all educational material learned throu
 ---
 
 ## **Certificate** 🧾
-![Meta Certificate](images/Meta_DBEngineeringCert_1.png)
+<object data="https://github.com/craigtrupp/meta_database_engineering/blob/main/images/Meta_DB_Engineering_1.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/craigtrupp/meta_database_engineering/blob/main/images/Meta_DB_Engineering_1.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/craigtrupp/meta_database_engineering/blob/main/images/Meta_DB_Engineering_1.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 * [Verification Link](https://coursera.org/verify/professional-cert/JVKWU2TG5H9)
