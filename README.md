@@ -132,6 +132,7 @@ This repository serves as a reference for all educational material learned throu
 ### **Database Clients** 🌉
 * **Connection Cursors**
     * [Establishing Connection](/Database%20Clients/Wk1_Connection_Cursors/Making%20your%20MySQL_Python%20connection.ipynb)
+    * [Establishing Connection](/Database%20Clients/Wk1_Connction_Cursors/Making%20your%20MySQL_Python%20connection.ipynb)
     * [Create Cursor & Access MySQL Database](/Database%20Clients/Wk1_Connection_Cursors/Working%20with%20cursors.ipynb)
     * [Simple Python App & SQL Management](/Database%20Clients/Wk1_Connection_Cursors/Creating%20a%20table%20structure%20in%20a%20MySQL%20database%20using%20Python.ipynb)
 
